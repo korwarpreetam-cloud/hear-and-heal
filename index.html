@@ -16,36 +16,93 @@
         </div>
         <div class="nav-links">
             <a href="index.html" class="nav-item">HOME</a>
-            <a href="#modules" class="nav-item">MODULES</a>
+            <a href="#" class="nav-item">MODULES</a>
             <a href="#" class="nav-item">BOOKING</a>
             <a href="#" class="nav-item">TESTIMONIALS</a>
-            <a href="#" class="login-btn">Login / Signup</a>
         </div>
+        <a href="#" class="login-btn">Login / Signup</a>
     </nav>
 
-    <main class="hero">
-        <div class="image-card card-left">
-            <img src="assets/meditation.png" alt="Meditation on Clouds">
+    <main class="dashboard-hero">
+        <div class="ripple-background">
+            <div class="ripple"></div>
+            <div class="ripple"></div>
+            <div class="ripple"></div>
+            <div class="ripple"></div>
         </div>
 
-        <section class="hero-content">
-            <h1 class="hero-title">Hear &<br>Heal</h1>
-            <p class="hero-subtitle">
-                A digital sanctuary bridging the gap between<br>
-                <em>modern anxiety</em> and <em>holistic frequency healing</em>.
-            </p>
-            <a href="#" class="cta-btn">
-                Book your Session
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </a>
-        </section>
+        <div class="hero-central-figure">
+            <img src="assets/mental-health-illustration.png" alt="Mental Health Illustration" class="person-img">
+            <div class="hero-cta-group">
+                <a href="#" class="cta-btn-primary">Book your session</a>
+                <a href="#" class="get-started-btn">Get Started</a>
+                <a href="#" class="hero-login-btn">Login / Signup</a>
+            </div>
+        </div>
 
-        <div class="image-card card-right">
-            <img src="assets/beach.png" alt="Tropical Beach">
+        <!-- Floating Cards & Tags -->
+        <div class="floating-elements">
+            <div class="status-card resting-card">
+                <h3>Resting your mind</h3>
+                <div class="progress-info">70% Done</div>
+                <div class="progress-bar">
+                    <div class="fill" style="width: 70%"></div>
+                </div>
+            </div>
+
+            <div class="status-card energy-card">
+                <h3>Boosting Energy by 100%</h3>
+                <div class="progress-bar">
+                    <div class="fill" style="width: 100%; background: #FACC15;"></div>
+                </div>
+            </div>
+
+            <div class="wellness-tag depression">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                </svg>
+                Depression
+            </div>
+
+            <div class="wellness-tag self-esteem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                self-esteem
+            </div>
+
+            <div class="wellness-tag anxiety">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6V10c0-3.07-1.63-5.64-4.5-6.32V3c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 4.36 6 6.92 6 10v6l-2 2v1h16v-1l-2-2z" />
+                </svg>
+                Anxiety
+            </div>
+
+            <div class="wellness-tag companion">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                </svg>
+                Companion
+            </div>
+
+            <div class="wellness-tag hyperactive">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Hyper-active disorder
+            </div>
+
+            <div class="wellness-tag anger">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2c-4.41 0-8 3.59-8 8v2c0 4.41 3.59 8 8 8s8-3.59 8-8v-2c0-4.41-3.59-8-8-8zm1 11h-2v-2h2v2zm0-4h-2V7h2v2z" />
+                </svg>
+                Anger Issue
+            </div>
         </div>
     </main>
 
@@ -160,11 +217,6 @@
 
     <!-- Modules Section -->
     <section id="modules" class="modules-section">
-        <div class="modules-headline scroll-reveal">
-            <span class="line">Clean.</span>
-            <span class="line">Clinical.</span>
-            <span class="line"><em>Holistic.</em></span>
-        </div>
 
         <div class="timeline-container">
             <div class="timeline-line-center scroll-reveal"></div>
@@ -179,13 +231,28 @@
                         Secure video rooms for Reiki sessions. Integrated payments and practitioner cards with verified
                         ratings.
                     </p>
-                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1000"
+                    <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&q=80&w=1000"
                         alt="Remote Healing Session" class="card-image">
                 </div>
             </div>
 
-            <!-- Item 2: Healing Library (Left) -->
+            <!-- Item 2: Growth Tracker (Left) -->
             <div class="timeline-row left scroll-reveal">
+                <div class="timeline-node" style="top: 2rem;"></div>
+                <div class="module-card">
+                    <h2 class="card-title">Growth Tracker</h2>
+                    <div class="card-divider"></div>
+                    <p class="card-text">
+                        Track 'Minutes Healed' and 'Mood Shifts'. Private journaling integration to process post-session
+                        thoughts effectively.
+                    </p>
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1000"
+                        alt="Journaling" class="card-image">
+                </div>
+            </div>
+
+            <!-- Item 3: Healing Library (Right) -->
+            <div class="timeline-row right scroll-reveal">
                 <div class="timeline-node" style="top: 2rem;"></div>
                 <div class="module-card">
                     <h2 class="card-title">Healing Library</h2>
@@ -194,18 +261,8 @@
                         High-fidelity audio visualizers with categories organized by Life Challenge. Add tracks to your
                         daily ritual for consistent healing.
                     </p>
-                </div>
-            </div>
-
-            <!-- Item 3: Growth Tracker (Right or Left - User image showed it partially below Remote Healing, usually zigzag) -->
-            <div class="timeline-row right scroll-reveal">
-                <div class="timeline-node" style="top: 2rem;"></div>
-                <div class="module-card">
-                    <h2 class="card-title">Growth Tracker</h2>
-                    <div class="card-divider"></div>
-                    <p class="card-text">
-                        Track Minutes Healed and Mood Shifts. Private journals encrypted for your safety.
-                    </p>
+                    <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=1000"
+                        alt="Healing Music" class="card-image">
                 </div>
             </div>
 
@@ -213,6 +270,32 @@
 
         <div class="glow-effect"></div>
     </section>
+
+    <!-- Floating Contact Button -->
+    <a href="https://wa.me/yournumber" class="floating-contact" target="_blank">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M12.031 6.172c-2.313 0-4.061 1.092-4.061 2.846 0 1.25.867 2.126 2.053 2.507l-.462 1.693 1.832-.988c.203.023.411.035.638.035 2.313 0 4.061-1.092 4.061-2.846 0-1.754-1.748-2.846-4.061-2.846zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.168l-1.434 5.168 5.168-1.434C8.67 21.476 10.339 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" />
+        </svg>
+    </a>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2 class="footer-logo">Hear n Heal</h2>
+                <p class="footer-tagline">THE KEY TO YOUR INNER PEACE</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Hear n Heal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -232,20 +315,53 @@
                 observer.observe(el);
             });
 
-            // Parallax Effect for Hero Images
-            const leftCard = document.querySelector('.card-left');
-            const rightCard = document.querySelector('.card-right');
+            // Enhanced Global Parallax Effect
+            const centralFigure = document.querySelector('.hero-central-figure');
+            const ripples = document.querySelectorAll('.ripple');
+            const anxietyContent = document.querySelector('.anxiety-content');
+            const anxietyImage = document.querySelector('.anxiety-image-container');
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            const timelineRows = document.querySelectorAll('.timeline-row');
 
             window.addEventListener('scroll', () => {
                 const scrollY = window.scrollY;
-                // Move images up faster than scroll (parallax)
-                if (leftCard) leftCard.style.transform = `translateY(calc(-50% - ${scrollY * 0.4}px)) rotate(-6deg)`;
-                if (rightCard) rightCard.style.transform = `translateY(calc(-50% - ${scrollY * 0.5}px)) rotate(5deg)`;
+                const windowHeight = window.innerHeight;
+
+                // Hero Parallax (Page 1)
+                if (scrollY < windowHeight) {
+                    if (centralFigure) {
+                        centralFigure.style.transform = `translateY(${scrollY * 0.4}px)`;
+                        centralFigure.style.opacity = 1 - (scrollY / (windowHeight * 0.8));
+                    }
+                    ripples.forEach((ripple, index) => {
+                        ripple.style.transform = `translateY(${scrollY * (0.2 + index * 0.05)}px)`;
+                    });
+                }
+
+                // Global Section Sliding (All Pages)
+                // Anxiety Section Parallax
+                if (anxietyContent) {
+                    const rect = anxietyContent.parentElement.getBoundingClientRect();
+                    const relativeScroll = windowHeight - rect.top;
+                    if (relativeScroll > 0) {
+                        anxietyContent.style.transform = `translateY(${relativeScroll * -0.1}px)`;
+                        if (anxietyImage) anxietyImage.style.transform = `translateY(${relativeScroll * 0.05}px)`;
+                    }
+                }
+
+                // Timeline Parallax
+                timelineRows.forEach((row, index) => {
+                    const rect = row.getBoundingClientRect();
+                    if (rect.top < windowHeight && rect.bottom > 0) {
+                        const speed = index % 2 === 0 ? 0.1 : -0.1;
+                        const shift = (windowHeight - rect.top) * speed;
+                        row.querySelector('.module-card').style.transform = `translateY(${shift}px)`;
+                    }
+                });
             });
 
             // Testimonial Scroll Highlighter
             const testimonialContainer = document.querySelector('.testimonials-container');
-            const testimonialCards = document.querySelectorAll('.testimonial-card');
 
             const highlightCenterCard = () => {
                 if (!testimonialContainer) return;
